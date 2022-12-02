@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150">
+<a xlink:href="test.svg">
+  <text x="100" y="30" style="font-size:12pt;">Cat</text>
+</a>
+</svg>
