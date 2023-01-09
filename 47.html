@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style type="text/css">
+    a.animatedLink {
+      animation-name: animKeys;
+      animation-iteration-count: infinite;
+      animation-duration: 0.5s;
+      animation-direction: alternate;
+      animation-play-state: paused;
+    }
+
+    a.animatedLink:hover {
+      animation-play-state: running;
+    }
+
+    @keyframes animKeys {
+      0% {
+        fill-opacity: 1.0;
+      }
+
+      100% {
+        fill-opacity: 0.5;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <svg width="150px" height="150px" viewBox="0 0 150 150">
+    <a class="animatedLink" href="http://www.w3.org/SVG/">
+      <circle cx="50" cy="70" r="20" style="fill:red;" />
+      <rect x="75" y="50" width="40" height="40" style="fill: green;" />
+      <path d="M120 90, 140 50, 160 90 Z" style="fill: blue;" />
+    </a>
+  </svg>
+</body>
+
+</html>
